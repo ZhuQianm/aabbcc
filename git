@@ -1,0 +1,57 @@
+git使用教程
+
+git  config
+
+```shell
+用户名信息 
+git  config --global user.name "zhujaob@163.com"
+邮箱信息： 
+git  config --global user.email  "zhujaob@163.com"
+查看用户和邮箱信息
+git config --list
+添加/删除文件(--cached删除缓存中的数据)
+git add/rm README.md
+提交文件
+git commit -m "这里是描述信息"
+查看git状态（查看位于哪个分支以及哪些文件没有提交）
+git status
+删除待提交中的内容
+git restore
+回退版本(远程替换本地文件)
+git checkout --  文件
+提交记录以及说明
+git log
+关联远程仓库
+git remote add origin    地址
+取消关联远程仓库
+git remote remove origin
+移动HEAD的指向，将其指向上一个快照(在暂存中)
+将HEAD移动后指向的快照回滚到暂存区域
+git reset --mixed HEAD
+撤销上一次提交的内容
+git reset --soft HEAD~
+将指定的快照还原到工作目录（覆盖工作目录中最新的版本）
+git reset --hard  HEAD~
+回滚指定快照
+git  reset id
+回滚指定快照中的某个文件
+git reset id  文件名/路径
+查看往日提交以及删除分支的id
+git reflog --date=iso 
+比较两个版本不同的文件内容不同的地方
+git diff
+比较当前工作目录与快照(HEAD最新的)
+git diff 快照id
+更正最近的一次提交
+git commit --amend
+从暂存区回复单个文件
+git checkout -- 文件名
+修改文件名
+git  mv 原文件名   新文件名
+```
+
+
+
+
+
+   
